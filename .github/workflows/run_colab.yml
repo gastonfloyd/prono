@@ -1,0 +1,15 @@
+name: Ejecutar Notebook en Colab
+
+# Define la frecuencia con la que quieres ejecutar el workflow
+on:
+  schedule:
+    - cron: '0 13 * * *'  # Cada lunes a las 13:00 a.m. UTC
+
+jobs:
+  execute-notebook:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Ejecutar notebook de Colab
+        run: |
+          curl -L 'https://colab.research.google.com/drive/1p6A8dskZHmRM9lNqT1TScpUCpAsD2Rb_?usp=sharing'
