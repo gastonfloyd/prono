@@ -3,7 +3,7 @@ name: Ejecutar Notebook en Colab
 # Define la frecuencia con la que quieres ejecutar el workflow
 on:
   schedule:
-    - cron: '0 13 * * *'  # Cada lunes a las 13:00 a.m. UTC
+    - cron: '* * * * *'  # Esto ejecuta el workflow cada minuto
 
 jobs:
   execute-notebook:
