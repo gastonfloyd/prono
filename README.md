@@ -1,2 +1,2 @@
 # prono
-Rutina para correr un scrip en Google Colab
+Rutina para correr el código de Prono
